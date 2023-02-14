@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <meta name="description" content="Portifólio de trabalhos" />
+    <meta name="author" content="Lucas Rodrigues Policarpo" />
+    <meta name="keywords" content="html5,css3,javascript,react,front-end" />
+    <link rel="icon" type="image/png" href="imagens/hacker.png"/>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Portifólio</a>
+        <div class="toggle" onclick="toggleMenu();"></div><!--toggle-->
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#sobre" onclick="toggleMenu();">Sobre</a></li>
+            <li><a href="#trabalho" onclick="toggleMenu();">Trabalhos</a></li>
+            <li><a href="#service" onclick="toggleMenu();">Serviços</a></li>
+            <li><a href="#testimonial" onclick="toggleMenu();">Depoimentos</a></li>
+            <li><a href="#contato" onclick="toggleMenu();">Contato</a></li>
+        </ul>
+    </header>
+
+    <section class="banner" id="home">
+        <div class="texto1">
+            <h2>Olá, Eu sou<br><span>Lucas Policarpo.</span></h2>
+            <h3>Sou um desenvolvedor Front-End.</h3>
+            <a href="#sobre" class="btn">Sobre Mim</a>
+        </div><!--texto1-->
+    </section><!--banner-->
+
+    <section class="sobre" id="sobre">
+        <div class="heading">
+            <h2>Sobre Mim</h2>
+        </div><!--heading-->
+        <div class="content">
+            <div class="content2 w100">
+                <h3>Sou desenvolvedor Front-End.</h3>
+                <p>Atualmente sou formado em Engenharia Mecânica pela UNIFRAN(Universidade de Franca) e estou cursando Engenharia da Computação pela FMU(Centro Universitário das Faculdades Metropolitanas Unidas).<br><br>Sempre tive interesse pela area de tecnologia, mas nunca havia consiguido me dedicar inteiramente a isso, há 6 meses venho me dedicando e estudando a fundo o Front-End, onde ne um curso paralelo que faço junto a faculdade estou me aprofundando em HTML5, CSS, Java Script e React.<br>Estou em busca de uma oportunidade para ingressar nesse mundo que ja amo a anos, quero me dedicar inteiramente a ser um desenvolvedor, crescendo e aprendendo cada vez mais. </p>
+            </div><!--content2 w100-->
+            <div class="w100">
+                <img src="imagens/caminho2.jpg" class="img" />
+            </div><!--w100-->   
+        </div><!--content-->
+    </section><!--sobre-->
+
+    <section class="trabalhos" id="trabalho">
+        <div class="heading white">
+            <h2>Meus Trabalhos</h2>
+            <p>Conheça melhor o que fiz durante minha carreira.</p>
+        </div><!--heading-->
+        <div class="content">
+            <div class="trabalhos2">
+                <img src="imagens/web.png" />
+                <h2>Web Design</h2>
+                <p>Desenvolvendo sites, blogs, sistemas, aplicativos para web e peças digitais como banners e artes para redes sociais. </p>
+            </div><!--trabalhos2-->
+            <div class="trabalhos2">
+                <img src="imagens/icon2.png" />
+                <h2>Desenvolvimento Web</h2>
+                <p>Desenvolvimento técnico e visual de páginas da internet e manutenção de sites, definindo linguagens, bancos de dados, armazenamento e atualização de informações. </p>
+            </div><!--trabalhos2-->
+            <!-- <div class="trabalhos2">
+                <img src="imagens/icon3.png" />
+                <h2>Android App</h2>
+                <p>Responsividade nos codigos . </p>
+            </div>trabalhos2 -->
+            <div class="trabalhos2">
+                <img src="imagens/icon4.png" />
+                <h2>Fotografia</h2>
+                <p>Especialista em fotografias de imóveis para venda com foco na edição das imagens para que possa se mostrar o maximo possivel do imóvel.</p>
+            </div><!--trabalhos2-->
+            <div class="trabalhos2">
+                <img src="imagens/icon5.png" />
+                <h2>Redação de Conteúdo</h2>
+                <p>responsável pelo planejamento, pesquisa e produção de conteúdos escritos. </p>
+            </div><!--trabalhos2-->
+            <div class="trabalhos2">
+                <img src="imagens/icon6.png" />
+                <h2>Edição de Video</h2>
+                <p>Edição de videos de imoveis feitos para divulgação e apresentação para venda. </p>
+            </div><!--trabalhos2-->
+        </div><!--content-->
+    </section><!--trabalhos-->
+
+    <section class="service" id="service">
+        <div class="heading">
+            <h2>Meu Último Trabalho</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div><!--heading-->
+        <div class="content">
+            <div class="service2">
+                <img src="imagens/sala1.jpg" />
+            </div><!--services2-->
+            <div class="service2">
+                <img src="imagens/ti.jpg" />
+            </div><!--services2-->
+            <div class="service2">
+                <img src="imagens/pexels-thgusstavo-santana-2102587.jpg" />
+            </div><!--services2-->
+            <div class="service2">
+                <img src="imagens/pexels-pixabay-53610.jpg" />
+            </div><!--services2-->
+        </div><!--content-->
+        <div class="heading">
+            <a href="#" class="btn">Veja Mais</a>
+        </div><!--heading-->
+    </section><!--services-->
+
+    <section class="testimonial" id="testimonial">
+        <div class="heading">
+            <h2>Depoimentos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div><!--heading-->
+        <div class="content">
+            <div class="testimonial2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptas, tempore provident sapiente quam maiores atque error, fugiat nobis, architecto laudantium sint illo! Voluptas deleniti vero nihil. Dolorem, minus mollitia?</p>
+                <h3>Alguem Famoso<br><span>Design Criativo</span></h3>
+            </div><!--testimonial2-->
+            <div class="testimonial2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptas, tempore provident sapiente quam maiores atque error, fugiat nobis, architecto laudantium sint illo! Voluptas deleniti vero nihil. Dolorem, minus mollitia?</p>
+                <h3>Alguem Famoso<br><span>Design Criativo</span></h3>
+            </div><!--testimonial2-->
+        </div><!--content-->    
+    </section><!--testimonial-->
+
+    <section class="contato" id="contato">
+        <div class="heading white">
+            <h2>Entre em Contato</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div><!--heading-->
+        <div class="content">
+            <div class="contato2">
+                <h3>Informações de Contato</h3>
+                <div class="contato3">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div><!--icon-->
+                        <div class="text">
+                            <h3>Endereço</h3>
+                            <p>Rua Capitão Manoel Bento, n° 19<br>Apto 23<br>Itanhaém, São Paulo<br>11740-000</p>
+                        </div><!--text-->
+                    </div><!--box-->    
+
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                        </div><!--icon-->
+                        <div class="text">
+                            <h3>Telefone</h3>
+                            <p>+55 (13) 99699-1997</p>
+                        </div><!--text-->
+                    </div><!--box-->  
+
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div><!--icon-->
+                        <div class="text">
+                            <h3>E-mail</h3>
+                            <p>empresariallrp@gmail.com</p>
+                        </div><!--text-->
+                    </div><!--box-->  
+                </div><!--contato3-->
+            </div><!--contato2-->
+            
+            <div class="form2">
+                <form>
+                    <h3>Me Mande uma Mensagem</h3>
+                    <input type="text" name="" placeholder="Nome Completo" />
+                    <input type="email" name="" placeholder="Digite seu E-mail" />
+                    <textarea placeholder="Digite sua Mensagem"></textarea>
+                    <input type="submit" value="Enviar" name=""/>
+                </form>
+            </div><!--form2-->
+        </div><!--content-->
+    </section><!--contato-->
+
+    <footer class="copyright">
+        <P>Copyright © 2023 Lucas Policarpo. Todos os direitos Reservados.</P>
+    </footer><!--copyright-->
+
+    <script type="text/javascript">
+        window.addEventListener('scroll' , function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);});
+
+            function toggleMenu(){
+                var menuToggle = document.querySelector('.toggle');
+                var menu = document.querySelector('.menu');
+                menuToggle.classList.toggle('active');
+                menu.classList.toggle('active');
+            }
+    </script>
+</body>
+</html>
