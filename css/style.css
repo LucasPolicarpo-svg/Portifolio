@@ -219,7 +219,7 @@ img{
 
 .trabalhos .content .trabalhos2 img{
     max-width: 120px;
-    filter: invert(1);
+    /* filter: invert(1); */
 }
 
 .trabalhos .content .trabalhos2 h2{
