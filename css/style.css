@@ -215,6 +215,11 @@ img{
 
 .trabalhos .content .trabalhos2:hover{
     background:  #2196f3;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .trabalhos .content .trabalhos2 img{
@@ -243,6 +248,15 @@ img{
 
 .service .content .service2 img{
     max-width: 100%;
+    transition: 0.4s;
+}
+
+.service .content .service2 img:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .testimonial{
