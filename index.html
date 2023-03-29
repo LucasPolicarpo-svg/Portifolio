@@ -18,8 +18,8 @@
         <ul class="menu">
             <li><a href="#home" onclick="toggleMenu();">Home</a></li>
             <li><a href="#sobre" onclick="toggleMenu();">Sobre</a></li>
-            <li><a href="#trabalho" onclick="toggleMenu();">Trabalhos</a></li>
-            <li><a href="#service" onclick="toggleMenu();">Serviços</a></li>
+            <li><a href="#trabalho" onclick="toggleMenu();">Ferramentas</a></li>
+            <li><a href="#service" onclick="toggleMenu();">Projetos</a></li>
             <li><a href="#testimonial" onclick="toggleMenu();">Depoimentos</a></li>
             <li><a href="#contato" onclick="toggleMenu();">Contato</a></li>
         </ul>
@@ -30,9 +30,9 @@
             <h2>Olá, Eu sou<br><span>Lucas Policarpo.</span></h2>
             <h3>Desenvolvedor Front-End.</h3>
             <div class="btn2">
-                <a href="https://www.linkedin.com/in/lucaspolicarpodesenvolvedor/" class="btn-linkedin"></a>
-                <a href="https://github.com/LucasPolicarpo-svg" class="btn-github"></a>
-                <a href="https://wa.me/qr/QSKUY2LGKHOBC1" class="btn-whatsapp"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/lucaspolicarpodesenvolvedor/" class="btn-linkedin"></a>
+                <a target="_blank" href="https://github.com/LucasPolicarpo-svg" class="btn-github"></a>
+                <a target="_blank" href="https://wa.me/qr/QSKUY2LGKHOBC1" class="btn-whatsapp"></a>
             </div><!--btn2-->    
             <a href="#sobre" class="btn">Sobre Mim</a>
         </div><!--texto1-->
@@ -99,12 +99,12 @@
         </div><!--heading-->
         <div class="content">
             <div class="service2">
-                <a href="https://projeto02.lucaspolicarpo.com.br/">
+                <a target="_blank" href="https://projeto02.lucaspolicarpo.com.br/">
                 <img src="imagens/projeto01.jpg" />
                 </a>
             </div><!--services2-->
             <div class="service2">
-                <a href="https://projeto01.lucaspolicarpo.com.br/" >
+                <a target="_blank" href="https://projeto01.lucaspolicarpo.com.br/" >
                 <img src="imagens/projeto03.jpg" />
                 </a>
             </div><!--services2-->
@@ -116,7 +116,7 @@
             </div><!--services2-->
         </div><!--content-->
         <div class="heading">
-            <a href="https://github.com/LucasPolicarpo-svg" class="btn">Veja Mais</a>
+            <a target="_blank" href="https://github.com/LucasPolicarpo-svg" class="btn">Veja Mais</a>
         </div><!--heading-->
     </section><!--services-->
 
@@ -179,7 +179,7 @@
             </div><!--contato2-->
             
             <div class="form2">
-                <form>
+                <form method="post">
                     <h3>Me Mande uma Mensagem</h3>
                     <input type="text" name="" placeholder="Nome Completo" />
                     <input type="email" name="" placeholder="Digite seu E-mail" />
@@ -194,17 +194,6 @@
         <P>Copyright © 2023 Lucas Policarpo. Todos os direitos Reservados.</P>
     </footer><!--copyright-->
 
-    <script type="text/javascript">
-        window.addEventListener('scroll' , function(){
-            var header = document.querySelector('header');
-            header.classList.toggle('sticky', window.scrollY > 0);});
-
-            function toggleMenu(){
-                var menuToggle = document.querySelector('.toggle');
-                var menu = document.querySelector('.menu');
-                menuToggle.classList.toggle('active');
-                menu.classList.toggle('active');
-            }
-    </script>
+    <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>
