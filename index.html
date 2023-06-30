@@ -26,16 +26,22 @@
     </header>
 
     <section class="banner" id="home">
-        <div class="texto1">
-            <h2>Olá, Eu sou<br><span>Lucas Policarpo.</span></h2>
-            <h3>Desenvolvedor Front-End.</h3>
-            <div class="btn2">
-                <a target="_blank" href="https://www.linkedin.com/in/lucaspolicarpodesenvolvedor/" class="btn-linkedin"></a>
-                <a target="_blank" href="https://github.com/LucasPolicarpo-svg" class="btn-github"></a>
-                <a target="_blank" href="https://wa.me/qr/QSKUY2LGKHOBC1" class="btn-whatsapp"></a>
-            </div><!--btn2-->    
-            <a href="#sobre" class="btn">Sobre Mim</a>
-        </div><!--texto1-->
+        <div class="container">
+            <div class="stars">
+                <div class="mini-stars"></div>
+                <div class="mini-stars2"></div>
+            </div>
+            <div class="texto1">
+                <h2>Olá, Eu sou<br><span>Lucas Policarpo.</span></h2>
+                <h3>Desenvolvedor Front-End.</h3>
+                <div class="btn2">
+                    <a target="_blank" href="https://www.linkedin.com/in/lucaspolicarpodesenvolvedor/" class="btn-linkedin"></a>
+                    <a target="_blank" href="https://github.com/LucasPolicarpo-svg" class="btn-github"></a>
+                    <a target="_blank" href="https://wa.me/qr/QSKUY2LGKHOBC1" class="btn-whatsapp"></a>
+                </div><!--btn2-->    
+                <a href="#sobre" class="btn">Sobre Mim</a>
+            </div><!--texto1-->
+        </div>
     </section><!--banner-->
 
     <section class="sobre" id="sobre">
@@ -179,12 +185,12 @@
             </div><!--contato2-->
             
             <div class="form2">
-                <form method="post">
+                <form id="cad-usuario" method="post">
                     <h3>Me Mande uma Mensagem</h3>
-                    <input type="text" name="" placeholder="Nome Completo" />
-                    <input type="email" name="" placeholder="Digite seu E-mail" />
-                    <textarea placeholder="Digite sua Mensagem"></textarea>
-                    <input type="submit" value="Enviar" name=""/>
+                    <input id="i_name" type="text" name="" placeholder="Nome Completo" required/>
+                    <input id="i_email" type="email" name="" placeholder="Digite seu E-mail" required/>
+                    <textarea id="i_msg" placeholder="Digite sua Mensagem" required></textarea>
+                    <input onclick="validacao()" type="submit" value="Enviar" name=""/>
                 </form>
             </div><!--form2-->
         </div><!--content-->
@@ -195,5 +201,8 @@
     </footer><!--copyright-->
 
     <script type="text/javascript" src="./js/script.js"></script>
+    <script src="js/validacao.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/alert.js"></script>
 </body>
 </html>
