@@ -11,6 +11,10 @@
     scroll-behavior: smooth;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 header{
     position: fixed;
     top: 0;
@@ -83,98 +87,15 @@ section{
 
 }
 
-.mini-stars{
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    position: absolute;
-	width: 5px;
-	height: 5px;
-	border-radius: 50%;
-    box-shadow: 50px 30px white,
-    100px 80px white,
-    80px 120px white,
-    300px 20px white,
-    250px 130px white,
-    200px 50px white,
-    150px 100px white,
-    320px 100px white,
-    400px 190px white,
-    500px 290px white;
-    animation: anim-stars 10s linear infinite;
-}
-
-.mini-stars::after{
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    content: " ";
-    position: absolute;
-    top: 150px;
+.mini-stars {
     width: 5px;
     height: 5px;
     border-radius: 50%;
-    box-shadow: 50px 30px white,
-      100px 80px white,
-      80px 120px white,
-      300px 20px white,
-      250px 130px white,
-      200px 50px white,
-      150px 100px white,
-      320px 100px white,
-      400px 190px white,
-      500px 290px white;
+    background-color: white;
+    position: absolute;
+    animation: anim-stars 10s linear infinite;
 }
 
-.mini-stars2{
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    position: absolute;
-    width: 3px;
-    height: 3px;
-    border-radius: 50%;
-    box-shadow: 15px 15px white,
-      125px 35px white,
-      50px 80px white,
-      10px 120px white,
-      275px 90px white,
-      230px 10px white,
-      120px 130px white,
-      300px 130px white,
-      220px 115px white,
-      400px 190px white,
-      500px 290px white;
-    animation: anim-stars 20s linear infinite;
-}
-  
-.mini-stars2::after{
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    content: " ";
-    position: absolute;
-    top: 150px;
-    width: 3px;
-    height: 3px;
-    border-radius: 50%;
-    box-shadow: 15px 15px white,
-      125px 35px white,
-      50px 80px white,
-      10px 120px white,
-      275px 90px white,
-      230px 10px white,
-      120px 130px white,
-      300px 130px white,
-      220px 115px white,
-      400px 190px white,
-      500px 290px white;
-}
-  
 
 .banner h2{
     font-size: 3em;
@@ -267,7 +188,7 @@ section{
 }
 
 .content2 p{
-    font-family: 'Poppins', sans-serif;
+    margin-top: 50px;
 }
 
 .content2 h3{
@@ -487,11 +408,12 @@ img{
 }
 
 @keyframes anim-stars {
-    from {
-        transform: translateY(0px);
+    0% {
+        opacity: 1;
     }
-    to {
-        transform: translateY(-150px);
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
     }
 }
 
@@ -563,6 +485,11 @@ img{
     .heading h2{
         font-size: 24px;
     }
+
+    .content2{
+        padding-right: 0;
+    }
+
     .content2 h3{
         font-size: 20px;
     }
@@ -599,5 +526,9 @@ img{
     }
     .banner{
         padding: 150px 20px 100px;
+    }
+
+    .content2{
+        padding-right: 0;
     }
 }
