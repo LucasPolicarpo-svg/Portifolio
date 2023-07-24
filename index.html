@@ -9,19 +9,22 @@
     <meta name="description" content="Portifólio de trabalhos" />
     <meta name="author" content="Lucas Rodrigues Policarpo" />
     <meta name="keywords" content="html5,css3,javascript,react,front-end" />
+    <meta property="og:title" content="Meu Portifólio">
+    <meta property="og:description" content="Conheça um pouco mais do meu trabalho!">
+    <meta property="og:image" content="https://i.postimg.cc/yYcx0M3W/Preto-e-Vermelho-Legal-e-Moderno-Logotipo-para-Jogo.png">
     <link rel="icon" type="image/png" href="imagens/hacker.png"/>
 </head>
 <body>
     <header>
         <a href="#" class="logo">Portifólio</a>
-        <div class="toggle" onclick="toggleMenu();"></div><!--toggle-->
+        <div class="toggle" id="menu-toggle"></div><!--toggle-->
         <ul class="menu">
-            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
-            <li><a href="#sobre" onclick="toggleMenu();">Sobre</a></li>
-            <li><a href="#trabalho" onclick="toggleMenu();">Ferramentas</a></li>
-            <li><a href="#service" onclick="toggleMenu();">Projetos</a></li>
-            <li><a href="#testimonial" onclick="toggleMenu();">Depoimentos</a></li>
-            <li><a href="#contato" onclick="toggleMenu();">Contato</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#trabalho">Ferramentas</a></li>
+            <li><a href="#service">Projetos</a></li>
+            <li><a href="#testimonial">Depoimentos</a></li>
+            <li><a href="#contato">Contato</a></li>
         </ul>
     </header>
 
@@ -29,7 +32,6 @@
         <div class="container">
             <div id="stars-container">
                 <div class="mini-stars"></div>
-                <button id="toggle-button">Toggle Stars</button>
             </div>
             <div class="texto1">
                 <h2>Olá, Eu sou<br><span>Lucas Policarpo.</span></h2>
@@ -51,7 +53,7 @@
         <div class="content">
             <div class="content2 w100">
                 <h3>Sou desenvolvedor Front-End.</h3>
-                <p>Atualmente sou formado em Engenharia Mecânica pela UNIFRAN(Universidade de Franca) e estou cursando Engenharia da Computação pela FMU(Centro Universitário das Faculdades Metropolitanas Unidas).<br><br>Sempre tive interesse pela area de tecnologia, mas nunca havia consiguido me dedicar inteiramente a isso, há 6 meses venho me dedicando e estudando a fundo o Front-End, onde ne um curso paralelo que faço junto a faculdade estou me aprofundando em HTML5, CSS, Java Script e React.<br>Estou em busca de uma oportunidade para ingressar nesse mundo que ja amo a anos, quero me dedicar inteiramente a ser um desenvolvedor, crescendo e aprendendo cada vez mais. </p>
+                <p>Atualmente sou formado em Engenharia Mecânica pela UNIFRAN(Universidade de Franca) e estou cursando Engenharia da Computação pela FMU(Centro Universitário das Faculdades Metropolitanas Unidas).<br><br>Sempre tive interesse pela area de tecnologia, mas nunca havia consiguido me dedicar inteiramente a isso, há 6 meses venho me dedicando e estudando a fundo o Front-End, onde ne um curso paralelo que faço junto a faculdade estou desenvolvendo em HTML5, CSS, SASS, Bootstrap, Java Script, JQuery e React e começando agora em Python.<br>Estou em busca de uma oportunidade para ingressar nesse mundo que ja amo a anos, quero me dedicar inteiramente a ser um desenvolvedor, crescendo e aprendendo cada vez mais. </p>
             </div><!--content2 w100-->
             <div class="w100">
                 <img src="imagens/foto perfil.jpeg" class="img" />
@@ -105,7 +107,7 @@
         </div><!--heading-->
         <div class="content">
             <div class="service2">
-                <a target="_blank" href="https://projeto02.lucaspolicarpo.com.br/">
+                <a target="_blank" href="https://projeto-03-lake.vercel.app/">
                 <img src="imagens/site 3.gif" />
                 </a>
             </div><!--services2-->
@@ -115,10 +117,14 @@
                 </a>
             </div><!--services2-->
             <div class="service2">
-                <img src="imagens/site 4.gif" />
+                <a href="https://projeto-02-delta.vercel.app/">
+                    <img src="imagens/site 4.gif" />
+                </a>
             </div><!--services2-->
             <div class="service2">
-                <img src="imagens/site 2.gif" />
+                <a href="https://police-and-taxi.vercel.app/">
+                    <img src="imagens/site 2.gif" />
+                </a>
             </div><!--services2-->
         </div><!--content-->
         <div class="heading">

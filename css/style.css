@@ -12,6 +12,7 @@
 }
 
 body{
+    margin: 0 auto;
     overflow-x: hidden;
 }
 
@@ -520,6 +521,10 @@ img{
 }
 
 @media screen and (max-width: 600px){
+    body{
+        overflow-x: hidden;
+    }
+    
     header, header.sticky{
         padding: 20px 20px;
         z-index: 1000;
@@ -530,5 +535,5 @@ img{
 
     .content2{
         padding-right: 0;
-    }
+    } 
 }
