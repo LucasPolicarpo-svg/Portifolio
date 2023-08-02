@@ -2,7 +2,7 @@
     let starsContainer = document.getElementById('stars-container');
 
     function createStar() {
-        const screenWidth = 1920;
+        const screenWidth = window.innerWidth;
         const star = document.createElement('div');
         star.classList.add('mini-stars');
 
@@ -17,7 +17,7 @@
     }
 
     function createStarsLoop() {
-        setInterval(createStar, 50);
+        setInterval(createStar, 150);
     }
 
     // Chama a função para criar bolinhas inicialmente ao carregar a página
